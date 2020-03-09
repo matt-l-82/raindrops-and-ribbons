@@ -84,7 +84,7 @@ body {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 300;
-    margin-right: 20px;
+    padding: 20px;
     letter-spacing: 2px; }
 
 .header__text-box {
@@ -111,3 +111,9 @@ body {
     letter-spacing: 15px;
     animation-name: moveInRight;
     animation-duration: .8s; }
+
+.social {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
