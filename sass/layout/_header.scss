@@ -28,7 +28,11 @@
    font-weight: 300;
    padding: 20px;
    letter-spacing: 2px;
+   transition: all .3s ease-in-out;
+  }
 
+  ul li a:hover {
+    background: rgba(0, 0, 0, 1);
   }
 }
 
@@ -41,6 +45,7 @@
   .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+    text-align: center;
 
     &--main {
       display: block;
@@ -67,4 +72,14 @@
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    & ul li a {
+      background: rgba(255, 255, 255, .6);
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  .social ul li a:hover {
+    transform: shrink(0.6);
+    background: black;
   }

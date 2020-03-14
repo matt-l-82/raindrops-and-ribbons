@@ -37,6 +37,77 @@ body {
   color: #777;
   box-sizing: border-box; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px; }
+  .heading-secondary span {
+    color: #ffbb00; }
+
+.calender-icon {
+  display: inline-block;
+  margin: 40px auto 20px; }
+
+.u-center-text {
+  text-align: center; }
+
+.btn {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #ffbb00;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #777;
+  letter-spacing: .2rem; }
+
+.card {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
+.card__top {
+  position: relative; }
+  .card__top img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+  .card__top p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.3rem; }
+
+.card__bottom {
+  padding: 15px; }
+  .card__bottom h3 {
+    font-size: 1.6rem;
+    color: #777;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem; }
+
+.event__details {
+  display: flex;
+  margin-bottom: 2rem; }
+  .event__details--icon {
+    display: flex;
+    align-items: center; }
+  .event__details i {
+    color: #ffbb00; }
+  .event__details p {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .event__details--paragraph {
+    margin-bottom: 2rem;
+    font-size: 1.2rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -85,7 +156,10 @@ body {
     font-size: 1.6rem;
     font-weight: 300;
     padding: 20px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out; }
+  .header ul li a:hover {
+    background: black; }
 
 .header__text-box {
   position: absolute;
@@ -95,7 +169,8 @@ body {
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .heading-primary--main {
     display: block;
     font-size: 60px;
@@ -117,3 +192,14 @@ body {
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .social ul li a {
+    background: rgba(255, 255, 255, 0.6);
+    transition: all .3s ease-in-out; }
+
+.social ul li a:hover {
+  transform: shrink(0.6);
+  background: black; }
+
+.section-events {
+  background-color: #f3f3f3;
+  padding: 15rem 0; }
