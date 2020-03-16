@@ -1,0 +1,49 @@
+.section__blog--img {
+  max-width: 100%;
+  height: auto;
+
+  &--heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .4rem;
+  }
+
+  &--paragraph {
+    font-size: 1rem;
+  }
+}
+
+.blog__author {
+  display: flex;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  h6 {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+  }
+
+  p {
+    margin: 10px 0 10px 0;
+    font-size: 1.3rem;
+  }
+
+  &--social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &--social li i {
+    color: $color-yellow;
+  }
+
+  &--social li:last-child {
+    margin-left: 15px;
+  }
+}

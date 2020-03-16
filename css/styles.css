@@ -47,10 +47,42 @@ body {
 
 .calender-icon {
   display: inline-block;
-  margin: 40px auto 20px; }
+  margin: 40px 0 50px 0; }
 
 .u-center-text {
   text-align: center; }
+
+.section__blog--img {
+  max-width: 100%;
+  height: auto; }
+  .section__blog--img--heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .4rem; }
+  .section__blog--img--paragraph {
+    font-size: 1rem; }
+
+.blog__author {
+  display: flex; }
+  .blog__author--content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center; }
+  .blog__author h6 {
+    font-size: 1rem;
+    letter-spacing: .2rem; }
+  .blog__author p {
+    margin: 10px 0 10px 0;
+    font-size: 1.3rem; }
+  .blog__author--social {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+  .blog__author--social li i {
+    color: #ffbb00; }
+  .blog__author--social li:last-child {
+    margin-left: 15px; }
 
 .btn {
   position: relative;
@@ -64,6 +96,12 @@ body {
   font-weight: 700;
   color: #777;
   letter-spacing: .2rem; }
+
+.btn-blog {
+  display: inline-block;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0; }
 
 .card {
   background-color: #fff;
@@ -202,4 +240,8 @@ body {
 
 .section-events {
   background-color: #f3f3f3;
+  padding: 15rem 0; }
+
+.section__blog {
+  background-color: #fff;
   padding: 15rem 0; }
