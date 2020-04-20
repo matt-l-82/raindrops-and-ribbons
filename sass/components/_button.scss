@@ -12,9 +12,42 @@
   letter-spacing: .2rem;
 }
 
-.btn-blog {
+.btn--blog {
   display: inline-block;
   font-size: 1.2rem;
   border: none;
+  margin-top: 20px;
   padding: 0;
+  transition: all .4s ease-in-out;
+}
+
+.btn--blog:hover {
+  color: $color-pink;
+}
+
+.btn-card {
+  border: 1px solid $color-dark-red;
+  color: $color-dark-red;
+  transition: all .4s;
+
+  &:hover {
+    background-color: $color-dark-red;
+    color: $color-white;
+  }
+}
+
+.btn--form {
+  width: 30%;
+  border: 1px solid $color-dark-red;
+  color: $color-dark-red;
+  transition: all .4s;
+
+  &:hover {
+    background-color: $color-dark-red;
+    color: #fff;
+  }
+}
+
+.fa-paper-plane {
+  margin-right: 1rem;
 }

@@ -1,4 +1,4 @@
-.section-events {
+.section__events {
   background-color: $color-grey-light;
   padding: 15rem 0;
 }
@@ -6,4 +6,19 @@
 .section__blog {
   background-color: $color-white;
   padding: 15rem 0;
+}
+
+.section-book {
+  background-color: $color-grey-light;
+  padding: 15rem 0;
+
+&__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
+
+.footer {
+    background-color: $color-white;
+    padding: 15rem 0;
 }

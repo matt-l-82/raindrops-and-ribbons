@@ -12,34 +12,46 @@
   <title>Raindrops and Ribbons</title>
 </head>
 <body>
-  <header class="header">
-    <nav class="header__site-nav">
-      <img src="img/logo.png" alt="Logo" class="header__logo">
-      <ul>
-        <li><a href="#">Dress Swap</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
 
+  <header class="header">
+    <div class="header__logo-box">
+      <img src="img/logo.png" alt="Logo" class="header__logo">
+    </div>
     <div class="header__text-box">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Raindrops and Ribbons</span>
         <span class="heading-primary--sub">Modern Vintage for the Modern Women</span>
       </h1>
     </div>
-
     <div class="social">
       <ul>
         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
       </ul>
-    </div>
+    </div><!-- END SOCIAL -->
   </header>
 
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nsbp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">Events</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Photo shoot</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+
+
   <main>
-    <section class="section-events">
+    <section class="section__events">
       <div class="u-center-text">
         <h2 class="heading-secondary">Upcoming <span>Events</span></h2>
         <div class="calender-icon">
@@ -63,12 +75,12 @@
                   <p>04/04/2020</p>
                 </div><!-- END EVENT__DETAILS ICON -->
                 <div class="event__details--icon">
-                  <i class="fa fa-map fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-map-pin fa-2x" aria-hidden="true"></i>
                   <p>Cambridge</p>
                 </div><!-- END EVENT__DETAILS ICON -->
               </div><!-- END EVENT DETAILS -->
               <p class="event__details--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A qui libero quaerat odio, blanditiis fuga!</p>
-              <a href="#" class="btn">Book</a>
+              <a href="#" class="btn btn-card">Book</a>
             </div><!--END CARD_BOTTOM  -->
           </div><!-- END CARD -->
         </div><!-- END COL -->
@@ -87,12 +99,12 @@
                   <p>04/04/2020</p>
                 </div>
                 <div class="event__details--icon">
-                  <i class="fa fa-map fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-map-pin fa-2x" aria-hidden="true"></i>
                   <p>Cambridge</p>
                 </div>
               </div><!-- END EVENT DETAILS -->
               <p class="event__details--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A qui libero quaerat odio, blanditiis fuga!</p>
-              <a href="#" class="btn">Book</a>
+              <a href="#" class="btn btn-card">Book</a>
             </div><!--END CARD_BOTTOM -->
           </div><!-- END COL -->
         </div><!-- END CARD -->
@@ -111,12 +123,12 @@
                   <p>04/04/2020</p>
                 </div>
                 <div class="event__details--icon">
-                  <i class="fa fa-map fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-map-pin fa-2x" aria-hidden="true"></i>
                   <p>Cambridge</p>
                 </div>
               </div><!-- END EVENT DETAILS -->
               <p class="event__details--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A qui libero quaerat odio, blanditiis fuga!</p>
-              <a href="#" class="btn">Book</a>
+              <a href="#" class="btn btn-card">Book</a>
             </div><!--END CARD -->
         </div><!-- END COL -->
       </div><!-- END ROW -->
@@ -126,13 +138,16 @@
       <div class="row">
         <div class="u-center-text">
           <h2 class="heading-secondary">Latest Blog <span>Posts</span></h2>
+          <div class="pen-icon">
+            <i class="fas fa-pen fa-3x"></i>
+          </div>
         </div>
 
         <div class="col-2-of-3">
           <img class="section__blog--img" src="img/bg-dublin-drinks.jpg" alt="Hills and water">
           <h2 class="section__blog--heading">10 Original ideas for dates</h2>
           <p class="section__blog--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quia itaque voluptate quos suscipit, aspernatur omnis ducimus vel eius temporibus autem libero recusandae corrupti ab possimus tempore magnam laboriosam nisi optio fugit dolore minima, laudantium ratione dolorem sed. Possimus cum numquam placeat assumenda, molestias eaque et distinctio. Doloribus voluptatum minus neque quas nihil facere, itaque atque cum, aperiam consectetur, dicta voluptatem sit sequi animi accusantium harum, rem velit. Atque aspernatur reprehenderit modi quas quae necessitatibus cumque iste distinctio fugit amet qui voluptates reiciendis molestiae quos, facilis eum tempore dolor mollitia eligendi, quisquam sapiente illum. Velit sed, sunt obcaecati dolore impedit.</p>
-          <a href="#" class="btn btn-blog">Read more</a>
+          <a href="#" class="btn btn--blog">Next post</a>
         </div>
         <div class="col-1-of-3">
           <div class="blog__author">
@@ -146,9 +161,99 @@
               </div><!-- SOCIAL BLOG -->
             </div><!-- END AUTHOR CONTENT -->
           </div><!-- BLOG AUTHOR -->
+          <div class="latest__blog">
+            <h3>Latest from the blog post</h3>
+            <div class="latest__blog-content">
+              <div class="latest__blog-left">
+                <img src="img/antiqueKeys.jpg" alt="antique keys">
+              </div>
+              <div class="latest__blog-right">
+                <h5>4th March 2020 // Example</h5>
+                <h5>By Michelle</h5>
+              </div>
+            </div>
+            <div class="latest__blog-content">
+              <div class="latest__blog-left">
+                <img src="img/antiqueKeys.jpg" alt="antique keys">
+              </div>
+              <div class="latest__blog-right">
+                <h5>4th March 2020 // Example</h5>
+                <h5>By Michelle</h5>
+              </div>
+            </div>
+            <div class="latest__blog-content">
+              <div class="latest__blog-left">
+                <img src="img/antiqueKeys.jpg" alt="antique keys">
+              </div>
+              <div class="latest__blog-right">
+                <h5>4th March 2020 // Example</h5>
+                <h5>By Michelle</h5>
+              </div>
+            </div>
+          </div><!-- END LATEST BLOG POST -->
         </div><!-- END COL -->
       </div><!-- END ROW -->
     </section>
+
+    <section class="section-book">
+        <div class="row">
+            <div class="book">
+                <div class="book__form">
+                    <form action="#" class="form">
+                        <div class="u-center-text">
+                            <h2 class="heading-secondary">Got a question?</h2>
+                            <div class="form-icon">
+                              <i class="fas fa-paper-plane fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                            <label for="email" class="form__label">Email Address</label>
+                        </div>
+
+                        <div class="form__group">
+                          <textarea id="textarea" name="text"></textarea>
+                          <a href="#" class="btn btn--form"><i class="fas fa-paper-plane"></i>Send It</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+
+          <picture class="footer__logo">
+              <img src="img/logo-footer.png" alt="Full logo">
+          </picture>
+
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Delivery & returns</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">T's & C's</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link"> Matt Laws</a> Copyright &copy; by Matt Laws
+                </p>
+            </div>
+        </div>
+    </footer>
+
   </main>
 
 </body>
