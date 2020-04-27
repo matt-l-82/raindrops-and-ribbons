@@ -61,18 +61,61 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777; }
-  body .heading-secondary {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px; }
-    body .heading-secondary span {
-      color: #ffe9e9; }
-  body .calender-icon,
-  body .pen-icon,
-  body .form-icon {
-    display: inline-block;
-    margin: 40px 0 50px 0; }
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 3.5rem;
+    line-height: 1.3;
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: .8s; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 3rem; } }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation-name: moveInRight;
+    animation-duration: .8s; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1rem;
+        letter-spacing: .5rem; } }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  .heading-secondary span {
+    color: #ffe9e9; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-secondary span {
+        font-size: 2.5rem; } }
+
+.calender-icon,
+.pen-icon,
+.form-icon {
+  display: inline-block;
+  margin: 40px 0 50px 0; }
 
 .u-center-text {
   text-align: center; }
@@ -268,6 +311,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -276,6 +325,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        margin-right: 0;
+        margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -316,33 +372,6 @@ body {
   .header ul li a:hover {
     background: #ffe9e9;
     color: #333; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center; }
-  .heading-primary--main {
-    display: block;
-    font-size: 50px;
-    font-weight: 600;
-    letter-spacing: 20px;
-    line-height: 1.3;
-    text-align: center;
-    animation-name: moveInLeft;
-    animation-duration: .8s; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 15px;
-    animation-name: moveInRight;
-    animation-duration: .8s; }
 
 .social {
   position: absolute;
@@ -506,7 +535,7 @@ body {
   .latest__blog-content {
     display: flex;
     align-items: center;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     border-bottom: 1px solid #d9d9d9; }
   .latest__blog-left {
     width: 50%; }
@@ -519,14 +548,23 @@ body {
 .section__events {
   background-color: #f3f3f3;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section__events {
+      padding: 10rem 1rem; } }
 
 .section__blog {
   background-color: #fff;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section__blog {
+      padding: 10rem 1rem; } }
 
 .section-book {
   background-color: #f3f3f3;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 1rem; } }
   .section-book__form {
     width: 50%;
     padding: 6rem; }
@@ -534,3 +572,6 @@ body {
 .footer {
   background-color: #fff;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 10rem 1rem; } }

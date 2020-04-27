@@ -1,16 +1,28 @@
 .section__events {
   background-color: $color-grey-light;
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 1rem;
+  }
 }
 
 .section__blog {
   background-color: $color-white;
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 1rem;
+  }
 }
 
 .section-book {
   background-color: $color-grey-light;
   padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 1rem;
+  }
 
 &__form {
         width: 50%;
@@ -21,4 +33,8 @@
 .footer {
     background-color: $color-white;
     padding: 15rem 0;
+
+    @include respond(tab-port) {
+      padding: 10rem 1rem;
+    }
 }
